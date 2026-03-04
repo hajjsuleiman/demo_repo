@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            margin: 2em;
+        }
+
+        div.gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        div.gallery-item {
+            margin: 5px;
+            border: 1px solid #ccc;
+            width: calc(25% - 20px);
+        }
+
+        div.gallery-item:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.gallery-item div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 768px) {
+        div.gallery-item {
+            width: calc(50% - 20px);
+        }
+        }
+
+        @media only screen and (max-width: 480px) {
+        div.gallery-item {
+            width: calc(100% - 20px);
+        }
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="gallery">
+
+    <div class="gallery-item">
+    <a target="_blank" href="head_phones.webp">
+        <img src="head_phones.webp" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Headphones</div>
+    </div>
+
+    <div class="gallery-item">
+    <a target="_blank" href="img_forest.jpg">
+        <img src="earphones.png" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Earpiece</div>
+    </div>
+
+    <div class="gallery-item">
+    <a target="_blank" href="img_lights.jpg">
+        <img src="earphones_2.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Earphones</div>
+    </div>
+
+    <div class="gallery-item">
+    <a target="_blank" href="img_mountains.jpg">
+        <img src="earpods.webp" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Earpods</div>
+    </div>
+
+</div>
